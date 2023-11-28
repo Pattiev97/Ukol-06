@@ -19,5 +19,9 @@ const fillcut = (str, len) => {
     }
 }
 
-document.body.innerHTML = fillcut("JavaScript", 8)
+document.body.innerHTML += fillcut("JavaScript", 8) + "<br>"
+document.body.innerHTML += fillcut("Java", 6) + "<br>"
+document.body.innerHTML += fillcut("Python", 6) + "<br>"
+document.body.innerHTML += fillcut(8, "pondělí") + "<br>"
+
 document.title = "Vyhlídalová - Úkol 6"
