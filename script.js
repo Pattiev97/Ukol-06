@@ -4,6 +4,12 @@
 - Pokud je vstupní řetězec dlouhý přesně len, funkce jej vrátí beze změny.*/
 
 const fillcut = (str, len) => {
+    if (typeof str === "string" && typeof len === "number" && len >= 0) {
+        //nic se neděje, funkce pokračuje
+    } else {
+        return `Neplatné hodnoty.`
+    }
+
     if (str.length > len) {
         return str.slice(0, len)
     } else if (str.length < len) {
@@ -13,4 +19,4 @@ const fillcut = (str, len) => {
     }
 }
 
-document.body.innerHTML = fillcut("pondělí", 8)
+document.body.innerHTML = fillcut("JavaScript", 8)
